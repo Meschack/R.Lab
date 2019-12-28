@@ -53,6 +53,10 @@ p{
     color: #6b6b6b;
     text-decoration:underline;
 }
+
+.r-sample:hover{
+    color: #7e7e7e;
+}
 .m-text-warning{
     color:#f77a00 !important;
 }

@@ -37,6 +37,13 @@ p{
     box-shadow: 0 0 70px rgba(138, 128, 139, 0.281);
 }
 
+h1{
+    font-size:40px;
+    font-weight:600;
+    font-family: 'Titillium Web', sans-serif;
+    color: #7e7e7e;
+}
+
 .r-btn{
     display: inline-block;
     border-bottom-right-radius:2rem;
@@ -55,7 +62,8 @@ p{
 }
 
 .r-sample:hover{
-    color: #7e7e7e;
+    color: #714e95;
+    text-decoration:underline;
 }
 .m-text-warning{
     color:#f77a00 !important;

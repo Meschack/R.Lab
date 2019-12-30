@@ -41,6 +41,22 @@ p{
     box-shadow: 0 0 70px rgba(138, 128, 139, 0.281);
 }
 
+@media(max-width:576px){
+    .r-form{
+        width:270px;
+    }
+}
+.r-marg{
+    margin-bottom:-50px;
+}
+
+@media(max-width:576px){
+    .r-marg{
+        margin-bottom:0px;
+        width:700px;
+    }
+}
+
 h1{
     font-size:40px;
     font-weight:600;

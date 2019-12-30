@@ -53,7 +53,16 @@ p{
 @media(max-width:576px){
     .r-marg{
         margin-bottom:0px;
-        width:700px;
+        width:550px;
+    }
+}
+
+.r-get-pad{
+    padding:50px 150px !important;
+}
+@media(max-width:576px){
+    .r-get-pad{
+        padding:5px;
     }
 }
 

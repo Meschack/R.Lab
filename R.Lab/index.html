@@ -13,17 +13,16 @@
     <link rel="icon" href="images/icon.png" type="image/x-icon">
     
 </head>
-<body style="background: #f7f7f7;">
-   
+<body id="loader" onload="myFunction();">
     <div style="position:absolute; height:100%; width:100%;">
         <div class="container-fluid text-center">
             <div class="row mt-5">
                 <div class="ml-5 ml-5 order-lg-1 order-1">
                     <a href="about.html" class="link">About</a>
                 </div>
-                <div class="col-lg-9 m-auto pt-4 order-lg-2 order-3">
-                    <a href="index.html"><img src="images/rlab-logo.png" class="img-fluid" alt="rlab-logo"></a>
-                    <p>Made with &#10084; by <a href="https://github.com/Meschack" target="outblank">Méschac Irung</a></p>
+                <div class="col-lg-9 m-auto pt-lg-4 pt-2 order-lg-2 order-3">
+                    <a href="index.html"><img src="images/rlab-logo.png" class="img-fluid r-logo" alt="rlab-logo"></a>
+                    <p class="r-author">Made with &#10084; by <a href="https://github.com/Meschack" target="outblank">Méschac Irung</a></p>
                 </div>
                 <div class="ml-lg-0 ml-5 mr-5 order-lg-3 order-2">
                     <a href="contact.html" class="link">Contact</a>
@@ -42,17 +41,20 @@
                 </div>
             </form>
 
-            <p class="text-center mt-3"><a href="sample.html" class="r-sample">Try a sample</a></p>
+            <p class="text-center mt-3 pb-5" style="position:relative;"><a href="sample.html" class="r-sample">Try a sample</a></p>
         </div>
+        <div class="d-lg-none d-md-none d-sm-none r-marg2" style="background:url(images/home-page2.png)center; height:200px; background-size:cover;">
 
-        <div class="fixed-bottom r-marg" style="position:fixed;">
+        </div>
+        <div class="r-marg">
             <img src="images/home-page.png" class="img-fluid" alt="">
         </div>
     </div>
 
-    <script type="text/script" src="js/jquery-3.4.1.min.js"></script>
-    <script type="text/script" src="js/popper.min.js"></script>
-    <script type="text/script" src="js/bootstrap.min.js"></script>
-    <script type="text/script" src="js/mdb.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mdb.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

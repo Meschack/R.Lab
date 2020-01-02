@@ -34,10 +34,11 @@
 
             <form action="" class="row m-flex-center mt-4">
                 <div>
-                    <input type="text" placeholder="www.your website domain here.com" class="r-form form-control">
+                    <input id="url2"  type="input" placeholder="www.your website domain here.com" class="r-form form-control">
                 </div>
-                <div>
-                    <a href="" class="r-btn text-white">&#10004;</a>
+                <button class="d-none" type="submit" onclick="control()">Tapez ici</button>
+                <div class="">
+                    <a href="" onclick="screenshot()" href="#picture" class="r-btn text-white">&#10004;</a>
                 </div>
             </form>
 
@@ -46,8 +47,9 @@
         <div class="d-lg-none d-md-none d-sm-none r-marg2" style="background:url(images/home-page2.png)center; height:200px; background-size:cover;">
 
         </div>
+        <img id="picture" src="images/home-page.png" class="img-fluid" alt="">
         <div class="r-marg">
-            <img src="images/home-page.png" class="img-fluid" alt="">
+            
         </div>
     </div>
 

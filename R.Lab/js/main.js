@@ -46,7 +46,7 @@ function screenshot(){
 
   // Web Address (URL) of the page to capture
   var url  = system.args[document.getElementById("url2").value];
-
+  alert(url);
   // File name of the captured image
   var file = system.args[capture]  + ".png";
 

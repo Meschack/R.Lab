@@ -1,3 +1,9 @@
+$("#mock").click(function() {
+  $('html, body').animate({
+      scrollTop: $("#mockups").offset().top
+  }, 1000);
+});
+
 var preload = document.getElementById('loading');
 
 function myFunction()

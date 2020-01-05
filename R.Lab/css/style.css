@@ -115,9 +115,9 @@ p{
 .r-get-pad{
     padding:50px 150px !important;
 }
-@media(max-width:576px){
+@media(min-width:576px){
     .r-get-pad{
-        padding:5px;
+        padding:5px !important;
     }
 }
 

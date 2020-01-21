@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>R.Lab - Create beautiful mockups of your website</title>
+
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+</head>
+<body>
+    <div>
+        <div class="container-fluid text-center" style="position: relative; z-index:1030;">
+            <div class="row mt-5">
+                <div class="ml-5 ml-5 order-lg-1 order-1">
+                    <a href="about.html" class="link">About</a>
+                </div>
+                <div class="col-lg-9 m-auto pt-lg-4 pt-2 order-lg-2 order-3">
+                    <a href="index.html"><img src="images/rlab-logo.png" class="img-fluid r-logo" alt="rlab-logo"></a>
+                    <p class="r-author">Made with &#10084; by <a href="https://github.com/Meschack" target="outblank">Méschac Irung</a></p>
+                </div>
+                <div class="ml-lg-0 ml-5 mr-5 order-lg-3 order-2">
+                    <a href="contact.html" class="link">Contact</a>
+                </div>
+            </div>
+            <div class="col-lg-6 m-auto">
+                <p class="paragraph mt-4">Create beautiful mockups of your website for free, all you need is to type your domain name.</p>
+            </div>
+
+            <div class="col-lg-4 m-card m-auto toast d-none" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <img src="/images/icon.png" width="30" class="rounded mr-2" alt="...">
+                    <strong class="mr-auto">Error</strong>
+                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <% if (locals.flash && locals.flash.error) { %>
+                <div class="toast-body">
+                    <%= flash.error %>
+                </div>
+                <% } %>
+            </div>
+
+            <form action="/" method="post" class="row m-flex-center mt-4 needs-validation" id="url" novalidate>
+                <div>
+                    <input id="siteurl validationCustom01" name="siteurl"  type="input" placeholder="www.your website domain here.com" class="r-form form-control" required>
+                </div>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <button type="submit" class="r-btn text-white">&#10004;</button>
+            </form>
+
+            <p class="text-center mt-3 pb-5" style="position:relative;"><a href="sample.html" class="r-sample">Try a sample</a></p>
+        </div>
+        
+        <div class="r-marg">
+            <img id="picture"  src="images/mockup-header-pic_1.webp" class="img-fluid" alt="">
+        </div>
+    </div>
+
+    <script>
+
+        (function() {
+        'use strict';
+            window.addEventListener('load', function() {
+                var forms = document.getElementsByClassName('needs-validation');
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+                });
+            }, false);
+        })();
+    </script>
+
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/mdb.min.js"></script>
+</body>
+</html>
